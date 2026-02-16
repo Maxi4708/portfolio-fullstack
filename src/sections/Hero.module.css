@@ -1,0 +1,49 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.greeting {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #fff, #a5a5a5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
