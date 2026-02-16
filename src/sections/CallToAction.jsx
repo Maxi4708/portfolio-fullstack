@@ -10,9 +10,7 @@ export default function CallToAction() {
                 Convirtamos tus requerimientos complejos en un producto limpio y mantenible.
             </p>
             <div className={styles.buttonGroup}>
-                <Button href="" variant="primary" className={styles.buttonLarge}>
-                    Iniciar un Proyecto
-                </Button>
+                
                 <Button href="https://www.linkedin.com/in/maximiliano-martinez4708/" variant="outline" className={styles.buttonLarge}>
                     Conectar en LinkedIn
                 </Button>

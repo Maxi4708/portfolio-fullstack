@@ -17,6 +17,10 @@ export default function Footer() {
                     </div>
                 </div>
 
+                <div className={styles.availability}>
+                    <p>Actualmente abierto a oportunidades como Full Stack Developer, aportando una base sólida en análisis de sistemas y desarrollo de aplicaciones web.</p>
+                </div>
+
                 <div className={styles.copyright}>
                     <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
                 </div>

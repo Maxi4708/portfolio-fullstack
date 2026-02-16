@@ -17,9 +17,8 @@ export default function Hero() {
                 Disponible para oportunidades como Full Stack Developer, aportando una base sólida en análisis de sistemas y desarrollo de aplicaciones web reales.
             </p>
             <div className={styles.actions}>
-                <Button href="#projects" variant="primary">Ver Proyectos</Button>
                 <Button href="https://github.com/Maxi4708" variant="outline">GitHub</Button>
-                <Button href="https://www.linkedin.com/in/maximiliano-martinez4708/" variant="ghost">LinkedIn</Button>
+                <Button href="https://www.linkedin.com/in/maximiliano-martinez4708/" variant="outline">LinkedIn</Button>
             </div>
         </div>
     )
