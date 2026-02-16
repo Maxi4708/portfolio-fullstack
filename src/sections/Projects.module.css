@@ -2,20 +2,6 @@
     width: 100%;
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--color-primary);
-}
-
-.subtitle {
-    color: var(--color-secondary);
-    font-size: 1.125rem;
-    margin-bottom: 3rem;
-    max-width: 600px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

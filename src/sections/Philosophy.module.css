@@ -8,7 +8,7 @@
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
@@ -17,18 +17,18 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     border-color: var(--color-primary);
     background: rgba(255, 255, 255, 0.05);
 }
 
 .icon {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--color-text);
     background: rgba(59, 130, 246, 0.1);
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +36,8 @@
 }
 
 .cardTitle {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: var(--color-text);
     margin-bottom: 1rem;
 }

@@ -4,7 +4,6 @@ import About from './sections/About'
 import Philosophy from './sections/Philosophy'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
-import Testimonials from './sections/Testimonials'
 import CallToAction from './sections/CallToAction'
 import Contact from './sections/Contact'
 import Header from './components/common/Header'
@@ -27,9 +26,6 @@ function App() {
         </Section>
         <Section id="projects" alternate>
           <Projects />
-        </Section>
-        <Section id="testimonials">
-          <Testimonials />
         </Section>
         <Section id="skills" alternate>
           <Skills />

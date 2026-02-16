@@ -3,18 +3,16 @@ import Container from '../layout/Container';
 
 export default function Header() {
     const navItems = [
-        { label: 'Sobre Mí', href: '#about' },
-        { label: 'Filosofía', href: '#philosophy' },
-        { label: 'Tecnologías', href: '#skills' },
+        { label: 'Sobre mí', href: '#about' },
         { label: 'Proyectos', href: '#projects' },
-        { label: 'Contacto', href: '#cta' }, // Changed to #cta as discussed
+        { label: 'Contacto', href: '#cta' },
     ];
 
     return (
         <header className={styles.header}>
             <Container>
                 <nav className={styles.nav}>
-                    <a href="#" className={styles.logo}>Portfolio</a>
+                    <div className={styles.logo}>Maximiliano Martinez</div>
                     <div className={styles.links}>
                         {navItems.map((item) => (
                             <a key={item.label} href={item.href} className={styles.link}>

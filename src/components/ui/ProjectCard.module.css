@@ -76,12 +76,13 @@
 }
 
 .detailLabel {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-secondary);
     font-weight: 700;
-    opacity: 0.8;
+    opacity: 1;
+    margin-bottom: 0.25rem;
 }
 
 .detailText {
@@ -109,4 +110,53 @@
     font-size: 0.875rem;
     padding: 0.5rem 1rem;
     height: auto;
+}
+
+.projectButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.buttonIcon {
+    transition: transform 0.2s ease;
+}
+
+.projectButton:hover .buttonIcon {
+    transform: translateX(4px);
+}
+
+.flowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    flex-wrap: wrap;
+}
+
+.flowItemWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flowItem {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: rgba(var(--color-primary-rgb), 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(var(--color-primary-rgb), 0.2);
+}
+
+.flowArrow {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    opacity: 0.6;
 }

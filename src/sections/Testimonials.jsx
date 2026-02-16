@@ -1,5 +1,4 @@
 import styles from './Testimonials.module.css';
-import SectionHeader from '../components/ui/SectionHeader';
 import Grid from '../components/layout/Grid';
 
 export default function Testimonials() {
@@ -22,7 +21,6 @@ export default function Testimonials() {
 
     return (
         <div id="testimonials" className={styles.testimonials}>
-            <SectionHeader title="Con la Confianza de Equipos de Ingeniería" />
 
             <Grid cols={2} className={styles.grid}>
                 {testimonials.map((t) => (

@@ -5,30 +5,33 @@ import Grid from '../components/layout/Grid';
 export default function Philosophy() {
     const principles = [
         {
-            title: 'Basado en Componentes',
-            description: 'Construyendo componentes UI modulares, reutilizables y testeables usando principios de Atomic Design.',
+            title: 'Arquitectura basada en componentes',
+            description: 'Componentes UI modulares, reutilizables y desacoplados para interfaces consistentes.',
             icon: '🧩',
         },
         {
-            title: 'Orientado a API',
-            description: 'Diseñando APIs RESTful y GraphQL consistentes, documentadas y fáciles de consumir.',
+            title: 'Desarrollo orientado a APIs',
+            description: 'Diseño de contratos claros y robustos para comunicación eficiente entre cliente y servidor.',
             icon: '🔌',
         },
         {
-            title: 'Arquitectura Escalable',
-            description: 'Diseñando sistemas que crecen con el producto, aplicando separación de responsabilidades.',
+            title: 'Estructura escalable',
+            description: 'Organización de código pensada para crecer sin deuda técnica ni complejidad accidental.',
             icon: '🏗️',
         },
         {
-            title: 'Limpio y Mantenible',
-            description: 'Escribiendo código autodocumentado con enfoque en legibilidad y mantenibilidad a largo plazo.',
+            title: 'Código limpio y mantenible',
+            description: 'Prácticas de Clean Code para asegurar que el software sea fácil de leer y extender.',
             icon: '✨',
         },
     ];
 
     return (
         <div id="philosophy" className={styles.philosophy}>
-            <SectionHeader title="Pensamiento Sistémico" />
+            <SectionHeader
+                title="Cómo construyo software"
+                subtitle="Mis pilares técnicos para crear soluciones de alto valor."
+            />
 
             <Grid cols={2} className={styles.grid}>
                 {principles.map((item) => (

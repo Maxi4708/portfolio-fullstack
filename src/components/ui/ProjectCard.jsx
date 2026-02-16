@@ -18,6 +18,7 @@ export default function ProjectCard({ project }) {
                 <div className={styles.header}>
                     <h3 className={styles.title}>{project.title}</h3>
 
+                    <span className={styles.detailLabel} style={{ marginBottom: '0.5rem', display: 'block' }}>Arquitectura</span>
                     <div className={styles.tags}>
                         {project.architecture && project.architecture.map(tag => (
                             <Badge key={tag} variant="primary">
@@ -29,17 +30,34 @@ export default function ProjectCard({ project }) {
 
                 <p className={styles.description}>{project.description || project.shortDescription}</p>
 
+                {project.architectureFlow && (
+                    <>
+                        <span className={styles.detailLabel} style={{ marginBottom: '0.5rem', display: 'block' }}>Flujo</span>
+                        <div className={styles.flowContainer}>
+                            {project.architectureFlow.map((item, index) => (
+                                <div key={item} className={styles.flowItemWrapper}>
+                                    <span className={styles.flowItem}>{item}</span>
+                                    {index < project.architectureFlow.length - 1 && (
+                                        <span className={styles.flowArrow}>→</span>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                )}
+
                 <div className={styles.detailsGrid}>
                     <div className={styles.detailItem}>
-                        <span className={styles.detailLabel}>Challenge</span>
+                        <span className={styles.detailLabel}>Problema</span>
                         <p className={styles.detailText}>{project.problem || project.problemStatement}</p>
                     </div>
                     <div className={styles.detailItem}>
-                        <span className={styles.detailLabel}>Solution</span>
+                        <span className={styles.detailLabel}>Solución</span>
                         <p className={styles.detailText}>{project.solution || project.solutionOverview}</p>
                     </div>
                 </div>
 
+                <span className={styles.detailLabel} style={{ marginBottom: '0.5rem', display: 'block' }}>Tecnologías</span>
                 <div className={styles.tags}>
                     {project.technologies && project.technologies.slice(0, 4).map(tech => (
                         <Badge key={tech} variant="default">{tech}</Badge>
@@ -53,10 +71,14 @@ export default function ProjectCard({ project }) {
                     {(project.github || (project.links && project.links.github)) && (
                         <Button
                             href={project.github || project.links.github}
-                            variant="outline"
-                            className={styles.buttonSmall}
+                            variant="primary"
+                            className={`${styles.buttonSmall} ${styles.projectButton}`}
                         >
-                            GitHub
+                            Ver código
+                            <svg className={styles.buttonIcon} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
                         </Button>
                     )}
                     {(project.demo || (project.links && project.links.live)) && (

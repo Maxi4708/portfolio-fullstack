@@ -5,7 +5,21 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Container>
-                <p>© {new Date().getFullYear()} Diseñado y Construido con arquitectura limpia.</p>
+                <div className={styles.footerContent}>
+                    <div className={styles.footerInfo}>
+                        <h3 className={styles.footerName}>Maximiliano Martinez</h3>
+                        <p className={styles.footerRole}>Analista de Sistemas & Full Stack Developer</p>
+                    </div>
+
+                    <div className={styles.footerLinks}>
+                        <a href="https://github.com/Maxi4708" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>GitHub</a>
+                        <a href="https://www.linkedin.com/in/maximiliano-martinez4708/" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>LinkedIn</a>
+                    </div>
+                </div>
+
+                <div className={styles.copyright}>
+                    <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
+                </div>
             </Container>
         </footer>
     );

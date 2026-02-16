@@ -32,13 +32,14 @@ export const projects = [
   {
     title: "ECashFlow",
     description:
-      "Proof of Concept de una billetera virtual enfocada en gestión de clientes, transacciones y flujo financiero dentro de un entorno bancario.",
+      "Plataforma financiera integral para la gestión de cuentas, transferencias y auditoría en tiempo real.",
     problem:
-      "Simular una plataforma de billetera digital capaz de administrar usuarios, transferencias y auditoría de movimientos.",
+      "Las instituciones financieras requieren sistemas robustos que garanticen la integridad de las transacciones y una experiencia de usuario fluida, minimizando errores operativos y tiempos de espera.",
     solution:
-      "Aplicación web desarrollada con Django que incluye autenticación por roles, dashboard administrativo, transferencias peer-to-peer y filtros de transacciones.",
-    technologies: ["Python", "Django", "SQL", "HTML", "CSS"],
-    architecture: ["Frontend", "Backend", "Database"],
+      "Desarrollo de una billetera digital segura con arquitectura escalable. Implementación de autenticación robusta, validación de transacciones ACID y un dashboard administrativo para monitoreo en tiempo real.",
+    technologies: ["Python", "Django", "PostgreSQL", "Bootstrap", "JavaScript"],
+    architecture: ["Backend MVC", "Monolito Modular", "RDBMS"],
+    architectureFlow: ["Frontend", "Backend", "Database"],
     github: "https://github.com/Maxi4708/ECashFlow",
     demo: ""
   }
