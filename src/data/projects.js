@@ -29,21 +29,17 @@
 
 /** @type {Project[]} */
 export const projects = [
-    {
-        id: "ecashflow",
-        title: "EcashFlow",
-        shortDescription: "Billetera virtual enfocada en gestión de fondos, transacciones y dashboard administrativo.",
-        fullDescription: "EcashFlow es una billetera virtual diseñada para simplificar la gestión de fondos y transacciones. Incluye un dashboard administrativo para el seguimiento detallado de operaciones.",
-        technologies: ["React", "Python", "SQL"],
-        architecture: ["Frontend", "Backend", "Database"],
-        problemStatement: "La gestión de fondos y el seguimiento de transacciones puede ser complejo sin una herramienta centralizada y eficiente.",
-        solutionOverview: "Una plataforma unificada que permite a los usuarios gestionar sus fondos y a los administradores supervisar las transacciones de manera eficiente.",
-        architectureDetails: "Frontend en React interactuando con un Backend en Python y base de datos SQL.",
-        links: {
-            github: "https://github.com",
-        },
-        images: {
-            thumbnail: "https://placehold.co/600x400/1a1a1a/FFF?text=EcashFlow",
-        },
-    },
+  {
+    title: "ECashFlow",
+    description:
+      "Proof of Concept de una billetera virtual enfocada en gestión de clientes, transacciones y flujo financiero dentro de un entorno bancario.",
+    problem:
+      "Simular una plataforma de billetera digital capaz de administrar usuarios, transferencias y auditoría de movimientos.",
+    solution:
+      "Aplicación web desarrollada con Django que incluye autenticación por roles, dashboard administrativo, transferencias peer-to-peer y filtros de transacciones.",
+    technologies: ["Python", "Django", "SQL", "HTML", "CSS"],
+    architecture: ["Frontend", "Backend", "Database"],
+    github: "https://github.com/Maxi4708/ECashFlow",
+    demo: ""
+  }
 ];
