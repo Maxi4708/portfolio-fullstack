@@ -1,4 +1,5 @@
 import styles from './Section.module.css';
+import FadeIn from '../common/FadeIn';
 
 export default function Section({
     id,
@@ -12,8 +13,11 @@ export default function Section({
             className={`${styles.section} ${alternate ? styles.sectionAlternate : ''} ${className}`}
         >
             <div className={styles.container}>
-                {children}
+                <FadeIn>
+                    {children}
+                </FadeIn>
             </div>
         </section>
     );
 }
+

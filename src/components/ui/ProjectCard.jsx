@@ -1,10 +1,15 @@
 import styles from './ProjectCard.module.css';
 import Button from './Button';
 import Badge from './Badge';
+import { motion } from 'framer-motion';
 
 export default function ProjectCard({ project }) {
     return (
-        <div className={styles.card}>
+        <motion.div
+            className={styles.card}
+            whileHover={{ y: -4 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
             {project.images && project.images.thumbnail && (
                 <div className={styles.imageContainer}>
                     <img
@@ -101,6 +106,7 @@ export default function ProjectCard({ project }) {
                     )}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
+
