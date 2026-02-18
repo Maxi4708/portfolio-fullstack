@@ -1,7 +1,7 @@
 .header {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     text-align: center;
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,15 +16,39 @@
 }
 
 .title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: clamp(2.25rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 1.25rem;
     color: var(--color-text);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    background: linear-gradient(to bottom right, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Re-introducing a subtle kicker option if needed, or just styling text */
+.header strong {
+    display: block;
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .subtitle {
-    font-size: 1.125rem;
-    color: var(--color-secondary);
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
     line-height: 1.6;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.left .subtitle {
+    margin-left: 0;
 }

@@ -5,25 +5,30 @@
 
 
 .category {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.2s ease;
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    height: 100%;
 }
 
 .category:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.4);
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .categoryTitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--color-text);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     border-bottom: 1px solid var(--color-border);
-    padding-bottom: 0.5rem;
-    text-transform: capitalize;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
 .list {
@@ -34,10 +39,20 @@
 }
 
 .item {
-    font-size: 0.95rem;
-    color: var(--color-text);
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+    font-family: var(--font-mono, monospace);
+    /* Optional: if mono font exists, otherwise falls back */
+}
+
+.item:hover {
+    color: var(--color-primary);
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.2);
+    transform: translateY(-1px);
 }

@@ -2,24 +2,31 @@
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 4rem 0;
+    /* Added padding for breathing room */
 }
 
 .title {
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to right, #fff, #94a3b8);
+    background: linear-gradient(to bottom right, #fff, #cbd5e1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
 }
 
 .description {
     font-size: 1.25rem;
-    color: var(--color-secondary);
+    color: var(--color-text-secondary);
     margin-bottom: 3rem;
     line-height: 1.6;
+    max-width: 600px;
+    /* Tighter width for readability */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buttonGroup {

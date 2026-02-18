@@ -4,7 +4,7 @@ import Button from '../components/ui/Button';
 export default function CallToAction() {
     return (
         <div className={styles.cta}>
-            <h2 className={styles.title}>¿Listo para construir algo escalable?</h2>
+            <h2 className={styles.title}>Construyo soluciones web enfocadas en arquitectura clara, escalabilidad y mantenimiento a largo plazo.</h2>
             <p className={styles.description}>
                 Ayudo a empresas a construir aplicaciones web robustas y enfocadas en la arquitectura.
                 Convirtamos tus requerimientos complejos en un producto limpio y mantenible.
