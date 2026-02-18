@@ -1,10 +1,14 @@
 .section {
-    padding: 8rem 0;
+    padding: 10rem 0;
+    /* Increased spacing for SaaS look */
     width: 100%;
+    position: relative;
 }
 
 .sectionAlternate {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: var(--color-card);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .container {
@@ -15,6 +19,6 @@
 
 @media (max-width: 768px) {
     .section {
-        padding: 5rem 0;
+        padding: 6rem 0;
     }
 }

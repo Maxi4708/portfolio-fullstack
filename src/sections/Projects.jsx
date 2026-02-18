@@ -2,7 +2,7 @@ import styles from './Projects.module.css';
 import ProjectCard from '../components/ui/ProjectCard';
 import { projects } from '../data/projects';
 import SectionHeader from '../components/ui/SectionHeader';
-import Grid from '../components/layout/Grid';
+import { StaggerContainer, StaggerItem } from '../components/common/FadeIn';
 
 export default function Projects() {
     return (
@@ -12,15 +12,19 @@ export default function Projects() {
                 subtitle="Una selección de proyectos que demuestran mi capacidad para resolver problemas complejos con arquitectura limpia."
             />
 
-            <Grid cols={3} className={styles.grid}>
+            <StaggerContainer className={styles.grid}>
                 {projects.length > 0 ? (
                     projects.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
+                        <StaggerItem key={project.id}>
+                            <ProjectCard project={project} />
+                        </StaggerItem>
                     ))
                 ) : (
-                    <p className={styles.subtitle}>No se encontraron proyectos.</p>
+                    <StaggerItem>
+                        <p className={styles.subtitle}>No se encontraron proyectos.</p>
+                    </StaggerItem>
                 )}
-            </Grid>
+            </StaggerContainer>
         </div>
     );
 }

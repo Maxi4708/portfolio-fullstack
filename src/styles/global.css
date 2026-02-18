@@ -1,16 +1,31 @@
 :root {
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --color-bg: #030712;
-  /* Gray 950 - Deeper black/blue */
-  --color-text: #f9fafb;
-  /* Gray 50 */
-  --color-text-secondary: #9ca3af;
-  /* Gray 400 */
-  --color-primary: #3b82f6;
-  /* Blue 500 */
-  --color-primary-glow: rgba(59, 130, 246, 0.5);
-  --color-border: #1f2937;
-  /* Gray 800 */
+
+  /* Layered Dark Theme (Zinc + Indigo) */
+  --color-bg: #09090b;
+  /* Zinc 950 - Main background */
+  --color-card: #18181b;
+  /* Zinc 900 - Card background */
+  --color-card-hover: #27272a;
+  /* Zinc 800 */
+
+  --color-text: #fafafa;
+  /* Zinc 50 - Primary text */
+  --color-text-secondary: #a1a1aa;
+  /* Zinc 400 - Secondary text */
+  --color-text-tertiary: #71717a;
+  /* Zinc 500 - Muted text */
+
+  --color-primary: #818cf8;
+  /* Indigo 400 - Modern accent */
+  --color-primary-dark: #6366f1;
+  /* Indigo 500 */
+  --color-primary-glow: rgba(129, 140, 248, 0.15);
+
+  --color-border: #27272a;
+  /* Zinc 800 - Subtle borders */
+  --color-border-hover: #3f3f46;
+  /* Zinc 700 */
 
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -24,7 +39,8 @@
 }
 
 ::selection {
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(99, 102, 241, 0.3);
+  /* Indigo selection */
   color: #fff;
 }
 
@@ -35,8 +51,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background-image:
-    radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(124, 58, 237, 0.04) 0%, transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(129, 140, 248, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(99, 102, 241, 0.05) 0%, transparent 30%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
